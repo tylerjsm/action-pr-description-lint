@@ -23,6 +23,10 @@ function run() {
         );
       }
 
+      if (!templateFile) {
+        return
+      }
+
       const template = (() => {
         try {
           contents = fs.readFileSync(templateFile, 'utf8')
@@ -37,8 +41,6 @@ function run() {
         core.setFailed(
           "The description matches the template for this repository. Please create a unique description."
         );
-      } else {
-        return
       }
 
     }
