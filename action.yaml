@@ -1,0 +1,8 @@
+name: Check pull request description
+description: Enforce pull request description standards
+branding:
+  icon: book-open
+  color: green
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
