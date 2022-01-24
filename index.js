@@ -13,7 +13,7 @@ function run() {
       );
     };
 
-    if (body.length() >= 7) {
+    if (body.length >= 7) {
       core.setFailed(
         "The pull request description is too short. Please add a description."
       );
