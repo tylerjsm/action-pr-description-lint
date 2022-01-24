@@ -37,7 +37,7 @@ function run() {
         } catch (error) {
           console.log("Unable to locate template file")
         }
-      })
+      })()
 
       if (body == template) {
         core.setFailed(
