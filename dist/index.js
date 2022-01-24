@@ -8497,9 +8497,11 @@ function run() {
         return
       }
 
+      console.log(templateFile)
       const template = (() => {
         try {
           contents = fs.readFileSync(templateFile, 'utf8')
+          console.log(contents)
           return contents
 
         } catch (error) {

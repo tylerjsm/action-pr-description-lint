@@ -1,7 +1,7 @@
 name: Check pull request description
 description: Enforce pull request description standards
 inputs:
-  template-file:  # id of input
+  template-file:
     description: 'Location of the template file'
 branding:
   icon: book-open
